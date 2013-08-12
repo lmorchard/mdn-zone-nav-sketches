@@ -17,13 +17,14 @@ $(document).ready(function () {
         })
     }
 
-    var rewriteNavLinks = function () {
+    var finalizeNav = function () {
         $('nav.subbranding a, nav.side a').each(function () {
             var link = $(this);
             var href = link.attr('href');
             href += '#zone=' + selected_zone;
             link.attr('href', href);
         });
+        $('body').addClass('reveal-nav');
     };
 
     var native_zone = '';
@@ -57,13 +58,13 @@ $(document).ready(function () {
             $('nav.subbranding').replaceWith(zone_doc.find('nav.subbranding'));
             $('nav.side').replaceWith(zone_doc.find('nav.side'));
 
-            rewriteNavLinks();
+            finalizeNav();
 
         }, 'html');
     
     } else {
 
-        rewriteNavLinks();
+        finalizeNav();
 
     }
 
