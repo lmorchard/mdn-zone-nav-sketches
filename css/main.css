@@ -1,0 +1,114 @@
+body {
+    background: #ccc;
+    margin: 0; 
+    padding: 0;
+}
+body .wrapper {
+    position: relative;
+    background: #eee;
+    margin: auto;
+    padding: 1em 1em 3em 1em;
+    width: 900px;
+    min-height: 20em;    
+}
+.wrapper > header {
+    background: #dedede;
+    padding: 1em 1em;
+    margin: 0;
+}
+.wrapper > header h1 {
+    margin: 0;
+    padding: 0 0 0 0.125em;
+}
+.wrapper > header h1 a {
+    text-decoration: none
+}
+.wrapper > footer {
+    display: block;
+    position: absolute;
+    bottom: 0em;
+}
+nav.top ul, nav.subbranding ul {
+    list-style-type: none 
+    margin: 0;
+    padding: 0
+}
+nav.top ul li, nav.subbranding ul li { 
+    display: inline;
+    margin: 0;
+    padding: 0.5em 1em;
+}
+nav.top ul li {
+    border: 1px solid #333;
+    padding-bottom: calc(0.5em - 1px);
+}
+nav.top ul {
+    margin-bottom: 5px;
+}
+nav.subbranding ul {
+    border: 1px solid #333;
+    margin: 0;
+    padding: 0.5em 1em;
+}
+nav.subbranding ul li { 
+    display: inline;
+    margin: 0 0.125em 0 0;
+    padding: 1em;
+}
+
+nav.side {
+    float: right;
+    min-width: 12.5em;
+    min-height: 20em;
+    border: 1px solid #666;
+    margin: 1.5em 1em 2em 1.5em;
+    padding: 1em;
+    background: #ddd;
+}
+nav.side ul li {
+    margin-bottom: 0.5em
+}
+article {
+    margin: 2em;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.25em 0 0.25em 0
+}
+
+nav.top ul li.apps { background: #edd; }
+nav.top ul li.games { background: #ded; }
+nav.top ul li.persona { background: #dde; }
+nav.top ul li.css { background: #eed; }
+nav.top ul li.js { background: #dee; }
+
+body.zone-apps nav.top ul li.apps {
+    padding-bottom: 0.5em;
+    background: #edd; border-bottom: none; }
+body.zone-apps nav.subbranding { background: #edd; }
+body.zone-apps nav.side { background: #edd; }
+
+body.zone-games nav.top ul li.games { 
+    padding-bottom: 0.5em;
+    background: #ded;  border-bottom: none; }
+body.zone-games nav.subbranding { background: #ded; }
+body.zone-games nav.side { background: #ded; }
+
+body.zone-persona nav.top ul li.persona { 
+    padding-bottom: 0.5em;
+    background: #dde;  border-bottom: none; }
+body.zone-persona nav.subbranding { background: #dde; }
+body.zone-persona nav.side { background: #dde; }
+
+body.zone-css nav.top ul li.css { 
+    padding-bottom: 0.5em;
+    background: #eed;  border-bottom: none; }
+body.zone-css nav.subbranding { background: #eed; }
+body.zone-css nav.side { background: #eed; }
+
+body.zone-js nav.top ul li.js { 
+    padding-bottom: 0.5em;
+    background: #dee;  border-bottom: none; }
+body.zone-js nav.subbranding { background: #dee; }
+body.zone-js nav.side { background: #dee; }
+
+
