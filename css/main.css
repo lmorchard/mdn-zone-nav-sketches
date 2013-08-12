@@ -28,8 +28,8 @@ body .wrapper {
     position: absolute;
     bottom: 0em;
 }
-nav.top, nav.subbranding { visibility: hidden}
-body.reveal-nav nav.top, body.reveal-nav nav.subbranding { visibility: visible; }
+nav.side, nav.subbranding { visibility: hidden}
+body.reveal-nav nav.side, body.reveal-nav nav.subbranding { visibility: visible; }
 
 nav.top ul, nav.subbranding ul {
     list-style-type: none 
